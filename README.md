@@ -1,2 +1,2 @@
 # alexballistic.github.io
-RAH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+go to lemmy
