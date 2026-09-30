@@ -1,0 +1,18 @@
+:root {
+  --red: #f40000;
+  --black: #000000;
+  --white: #ffffff;
+  --page-bg: #fdf6f2;
+  --banner-bg: #fbf4f0;
+  --sidebar-bg: #ffe7d3;
+  --card-bg: #ffe0cb;
+  --inner-bg: #fff6ef;
+  --box-bg: #fff8f3;
+  --label-bg: rgba(255, 255, 255, 0.85);
+  --card-border: color-mix(in srgb, var(--red) 25%, transparent);
+  --line: 2px solid var(--red);
+  --nav-line: 2px solid var(--black);
+  --radius: 10px;
+  --maxw: 1400px;
+  --gutter: min(30vw, 560px);
+}

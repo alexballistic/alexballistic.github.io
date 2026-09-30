@@ -1,0 +1,50 @@
+[
+  {
+    "section": "These are all the accounts I currently have.",
+    "items": [
+      {
+        "label": "Youtube: @alexBallistic",
+        "url": "https://www.youtube.com/@alexBallistic"
+      },
+      {
+        "label": "Bluesky: alexballistic.com",
+        "url": "https://bsky.app/profile/alexballistic.com"
+      },
+      {
+        "label": "Link",
+        "url": "https://models.spriters-resource.com/3ds/thelegendofzeldamajorasmask3d/asset/351751/"
+      }
+    ]
+  },
+  {
+    "section": "I have but barely use:",
+    "items": [
+      {
+        "label": "Twitch: alexballlistic",
+        "url": "https://www.twitch.tv/alexballlistic"
+      },
+      {
+        "label": "Tumblr: alexballistic",
+        "url": "https://www.tumblr.com/blog/alexballistic"
+      }
+    ]
+  },
+  {
+    "section": "Things that I made",
+    "items": [
+      {
+        "label": "fruit salad (I only draw the panels)",
+        "url": "https://www.webtoons.com/en/canvas/fruit-salad/list?title_no=1166837"
+      }
+    ]
+  },
+  {
+    "section": "Contact",
+    "items": [
+      {
+        "label": "message @alexballistic on discord",
+        "url": "#"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "src": "content/banners/bannerlaunch.png",
+    "link": "index.html",
+    "alt": "bannerlaunch"
+  },
+  {
+    "src": "content/banners/banner-photo.png",
+    "link": "photography.html",
+    "alt": "banner-photo"
+  },
+  {
+    "src": "content/banners/banner-links.png",
+    "link": "links.html",
+    "alt": "banner-links"
+  },
+  {
+    "src": "content/banners/banner-drawings.png",
+    "link": "drawings.html",
+    "alt": "banner-drawings"
+  }
+]
