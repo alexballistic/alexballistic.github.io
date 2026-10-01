@@ -3,5 +3,20 @@
     "src": "content/banners/bannerlaunch.png",
     "link": "index.html",
     "alt": "bannerlaunch"
+  },
+  {
+    "src": "content/banners/banner-photo.png",
+    "link": "index.html",
+    "alt": "banner-photo"
+  },
+  {
+    "src": "content/banners/banner-drawings.png",
+    "link": "index.html",
+    "alt": "banner-drawings"
+  },
+  {
+    "src": "content/banners/banner-links.png",
+    "link": "index.html",
+    "alt": "banner-links"
   }
 ]
