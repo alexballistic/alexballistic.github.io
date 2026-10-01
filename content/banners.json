@@ -3,10 +3,5 @@
     "src": "content/banners/bannerlaunch.png",
     "link": "index.html",
     "alt": "bannerlaunch"
-  },
-  {
-    "src": "content/banners/banner-photo.png",
-    "link": "index.html",
-    "alt": "banner-photo"
   }
 ]
