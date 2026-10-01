@@ -10,13 +10,13 @@
     "alt": "banner-photo"
   },
   {
-    "src": "content/banners/banner-links.png",
-    "link": "links.html",
-    "alt": "banner-links"
-  },
-  {
     "src": "content/banners/banner-drawings.png",
     "link": "drawings.html",
     "alt": "banner-drawings"
+  },
+  {
+    "src": "content/banners/banner-links.png",
+    "link": "links.html",
+    "alt": "banner-links"
   }
 ]
