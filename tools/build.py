@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -7,12 +8,29 @@ IMG = {".png", ".jpg", ".jpeg", ".gif", ".webp"}
 VID = {".mp4", ".webm", ".mov"}
 
 
+def created_at(rel):
+    try:
+        out = subprocess.run(
+            ["git", "log", "--diff-filter=A", "--format=%at", "--", rel],
+            cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+        if out:
+            return int(out[-1])
+    except (OSError, subprocess.SubprocessError, ValueError):
+        pass
+    try:
+        return int((ROOT / rel).stat().st_mtime)
+    except OSError:
+        return 0
+
+
 def media(folder, extra=()):
     exts = IMG | set(extra)
     if not folder.exists():
         return []
-    return [str(p.relative_to(ROOT).as_posix()) for p in sorted(folder.iterdir())
-            if p.is_file() and p.suffix.lower() in exts and not p.name.startswith(".")]
+    files = [p for p in folder.iterdir()
+             if p.is_file() and p.suffix.lower() in exts and not p.name.startswith(".")]
+    files.sort(key=lambda p: created_at(p.relative_to(ROOT).as_posix()), reverse=True)
+    return [str(p.relative_to(ROOT).as_posix()) for p in files]
 
 
 def build_galleries():
@@ -24,7 +42,6 @@ def build_galleries():
                 old = {b["src"]: b for b in json.loads(path.read_text()) if isinstance(b, dict) and b.get("src")}
             except (OSError, ValueError):
                 old = {}
-            files = sorted(files, key=lambda s: (ROOT / s).stat().st_mtime, reverse=True)
             files = [{
                 "src": s,
                 "link": old.get(s, {}).get("link", "index.html"),
